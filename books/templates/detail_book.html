@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+    <p>Description: {{ book.description }}</p>
+    <p>Author {{ book.author.name }}</p>
+    <p>Categories:
+        {% for category in book.category.all %}
+            {{ category.name }}{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    <p>Rating: {{ book.rating }}</p>
+    <a href="{% url 'update_book' book.id %}">edit</a>
+    <a href="{% url 'delete_book' book.id %}">delete</a>
+    <a href="{% url 'book_list' %}">back to list</a>
+</body

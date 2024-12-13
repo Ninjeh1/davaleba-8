@@ -1,0 +1,50 @@
+[
+    {
+        "model": "books.author",
+        "pk": 1,
+        "fields": {
+            "name": "jemal"
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 2,
+        "fields": {
+            "name": "jigmir"
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 1,
+        "fields": {
+            "name": "fiction"
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 2,
+        "fields": {
+            "name": "idk"
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields": {
+            "title": "MeinKrampf",
+            "description": "haha",
+            "author": 1,
+            "rating": 7
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 2,
+        "fields": {
+            "title": "slavery 101",
+            "description": "slavery beginner guide",
+            "author": 2,
+            "rating": 10
+        }
+    }
+]

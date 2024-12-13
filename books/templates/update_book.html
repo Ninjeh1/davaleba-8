@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>update ook</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update Book</button>
+    </form>
+    <a href="{% url 'book_list' %}">back to list</a>
+</body>
+</html>
